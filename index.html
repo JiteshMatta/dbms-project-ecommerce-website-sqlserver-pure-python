@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
-		 <base href="{{asset('')}}">
 		<!-- bootstrap -->
 		<link href="/./bootstrap/css/bootstrap.min.css" rel="stylesheet">      
 		<link href="/./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -30,7 +29,54 @@
 		<![endif]-->
 	</head>
     <body>		
-	        @include('header.html')
+		<div id="top-bar" class="container">
+			<div class="row">
+				<div class="span4">
+					<form method="POST" class="search_form">
+						<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
+					</form>
+				</div>
+				<div class="span8">
+					<div class="account pull-right">
+						<ul class="user-menu">				
+							<li><a href="#">My Account</a></li>
+							<li><a onclick="onclick_redirect('/./checkout.html')">Your Cart</a></li>
+							<li><a onclick="onclick_redirect('/./products.html')">Checkout</a></li>				
+							<li><a onclick="onclick_redirect('/./register.html')">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="container">
+			<section class="navbar main-menu">
+				<div class="navbar-inner main-menu">				
+					<a onclick="onclick_redirect('/./index.html')" class="logo pull-left"><img src="/./themes/images/logo.png" class="site_logo" alt=""></a>
+					<nav id="menu" class="pull-right">
+						<ul>
+							<li>
+								<a onclick="onclick_redirect('/./products.html')">Woman</a>	
+
+								<ul>
+									<li><a onclick="onclick_redirect('/./products.html')">Lacinia nibh</a></li>
+									<li><a onclick="onclick_redirect('/./products.html')">Eget molestie</a></li>
+									<li><a onclick="onclick_redirect('/./products.html')">Varius purus</a></li>					</ul>
+							</li>															
+							<li><a onclick="onclick_redirect('/./products.html')">Man </a></li>			
+							<li><a onclick="onclick_redirect('/./products.html')">Sport</a></li>
+								<ul>									
+									<li><a onclick="onclick_redirect('/./products.html')">Gifts and Tech</a></li>
+									<li><a onclick="onclick_redirect('/./products.html')">Ties and Hats</a></li>
+									<li><a onclick="onclick_redirect('/./products.html')">Cold Weather</a></li>
+								</ul>
+							</li>							
+							<li><a onclick="onclick_redirect('/./products.html')">Hangbag</a></li>
+							<li><a onclick="onclick_redirect('/./products.html')">Best Seller</a></li>
+							<li><a onclick="onclick_redirect('/./products.html')">Top Seller</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 			<section  class="homepage-slider" id="home-slider">
 				<div class="flexslider">
 					<ul class="slides">
@@ -73,7 +119,7 @@
 														<a onclick="onclick_redirect('/./product_detail.html')">
 														<img src="/./themes/images/ladies/1.jpg" alt="" /></a></p>
 														<a onclick="onclick_redirect('/./product_detail.html')" class="title">Ut wisi enim ad</a><br/>
-														<a onclick="onclick_redirect('/./product.html')"> class="category">Commodo consequat</a>
+														<a onclick="onclick_redirect('/./product.html')" class="category">Commodo consequat</a>
 														<p class="price">$17.25</p>
 													</div>
 												</li>
