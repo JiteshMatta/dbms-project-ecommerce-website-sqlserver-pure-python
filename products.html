@@ -29,7 +29,7 @@
 		<![endif]-->
 	</head>
     <body>		
-		   <div id="top-bar" class="container">
+		<div id="top-bar" class="container">
 			<div class="row">
 				<div class="span4">
 					<form method="POST" class="search_form">
@@ -39,10 +39,10 @@
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">				
-							<li><a href="#">My Account</a></li>
+							<!-- <li><a href="#">My Account</a></li> -->
 							<li><a onclick="onclick_redirect('/./checkout.html')">Your Cart</a></li>
 							<li><a onclick="onclick_redirect('/./products.html')">Checkout</a></li>				
-							<li><a onclick="onclick_redirect('/./register.html')">Login</a></li>
+							<li><a onclick="onclick_redirect('/./{user_page}.html')">{user_display}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -52,7 +52,7 @@
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
 					<a onclick="onclick_redirect('/./index.html')" class="logo pull-left"><img src="/./themes/images/logo.png" class="site_logo" alt=""></a>
-					<nav id="menu" class="pull-right">
+					<!-- <nav id="menu" class="pull-right">
 						<ul>
 							<li>
 								<a onclick="onclick_redirect('/./products.html')">Woman</a>	
@@ -74,7 +74,7 @@
 							<li><a onclick="onclick_redirect('/./products.html')">Best Seller</a></li>
 							<li><a onclick="onclick_redirect('/./products.html')">Top Seller</a></li>
 						</ul>
-					</nav>
+					</nav> -->
 				</div>
             </section>
 			<section class="main-content">
@@ -85,7 +85,7 @@
 							<li class="span3">
 								<div class="product-box">
 									<span class="sale_tag"></span>												
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/9.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/9.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Fusce id molestie massa</a><br/>
 									<a href="#" class="category">Phasellus consequat</a>
 									<p class="price">$341</p>
@@ -93,7 +93,7 @@
 							</li>       
 							<li class="span3">
 								<div class="product-box">												
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/8.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/8.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Praesent tempor sem</a><br/>
 									<a href="#" class="category">Erat gravida</a>
 									<p class="price">$28</p>
@@ -102,7 +102,7 @@
 							<li class="span3">
 								<div class="product-box">
 									<span class="sale_tag"></span>												
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/7.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/7.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Wuam ultrices rutrum</a><br/>
 									<a href="#" class="category">Suspendisse aliquet</a>
 									<p class="price">$341</p>
@@ -111,7 +111,7 @@
 							<li class="span3">
 								<div class="product-box">												
 									<span class="sale_tag"></span>
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/6.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/6.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Praesent tempor sem sodales</a><br/>
 									<a href="#" class="category">Nam imperdiet</a>
 									<p class="price">$49</p>
@@ -119,7 +119,7 @@
 							</li>
 							<li class="span3">
 								<div class="product-box">                                        												
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/1.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/1.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Fusce id molestie massa</a><br/>
 									<a href="#" class="category">Congue diam congue</a>
 									<p class="price">$35</p>
@@ -127,7 +127,7 @@
 							</li>       
 							<li class="span3">
 								<div class="product-box">												
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/2.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/2.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Tempor sem sodales</a><br/>
 									<a href="#" class="category">Gravida placerat</a>
 									<p class="price">$61</p>
@@ -135,7 +135,7 @@
 							</li>
 							<li class="span3">
 								<div class="product-box">												
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/3.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/3.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Quam ultrices rutrum</a><br/>
 									<a href="#" class="category">Orci et nisl iaculis</a>
 									<p class="price">$233</p>
@@ -143,7 +143,7 @@
 							</li>
 							<li class="span3">
 								<div class="product-box">												
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/4.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/4.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Tempor sem sodales</a><br/>
 									<a href="#" class="category">Urna nec lectus mollis</a>
 									<p class="price">$134</p>
@@ -151,7 +151,7 @@
 							</li>
 							<li class="span3">
 								<div class="product-box">												
-									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="themes/images/ladies/5.jpg"></a><br/>
+									<a onclick="onclick_redirect('/./product_detail.html')"><img alt="" src="/./themes/images/ladies/5.jpg"></a><br/>
 									<a onclick="onclick_redirect('/./product_detail.html')" class="title">Luctus quam ultrices</a><br/>
 									<a href="#" class="category">Suspendisse aliquet</a>
 									<p class="price">$261</p>
@@ -204,7 +204,7 @@
 											<li class="span3">
 												<div class="product-box">
 													<span class="sale_tag"></span>												
-													<img alt="" src="themes/images/ladies/1.jpg"><br/>
+													<img alt="" src="/./themes/images/ladies/1.jpg"><br/>
 													<a onclick="onclick_redirect('/./product_detail.html')" class="title">Fusce id molestie massa</a><br/>
 													<a href="#" class="category">Suspendisse aliquet</a>
 													<p class="price">$261</p>
@@ -216,7 +216,7 @@
 										<ul class="thumbnails listing-products">
 											<li class="span3">
 												<div class="product-box">												
-													<img alt="" src="themes/images/ladies/2.jpg"><br/>
+													<img alt="" src="/./themes/images/ladies/2.jpg"><br/>
 													<a onclick="onclick_redirect('/./product_detail.html')" class="title">Tempor sem sodales</a><br/>
 													<a href="#" class="category">Urna nec lectus mollis</a>
 													<p class="price">$134</p>
@@ -232,19 +232,19 @@
 							<ul class="small-product">
 								<li>
 									<a href="#" title="Praesent tempor sem sodales">
-										<img src="themes/images/ladies/3.jpg" alt="Praesent tempor sem sodales">
+										<img src="/./themes/images/ladies/3.jpg" alt="Praesent tempor sem sodales">
 									</a>
 									<a href="#">Praesent tempor sem</a>
 								</li>
 								<li>
 									<a href="#" title="Luctus quam ultrices rutrum">
-										<img src="themes/images/ladies/4.jpg" alt="Luctus quam ultrices rutrum">
+										<img src="/./themes/images/ladies/4.jpg" alt="Luctus quam ultrices rutrum">
 									</a>
 									<a href="#">Luctus quam ultrices rutrum</a>
 								</li>
 								<li>
 									<a href="#" title="Fusce id molestie massa">
-										<img src="themes/images/ladies/5.jpg" alt="Fusce id molestie massa">
+										<img src="/./themes/images/ladies/5.jpg" alt="Fusce id molestie massa">
 									</a>
 									<a href="#">Fusce id molestie massa</a>
 								</li>   
@@ -275,7 +275,7 @@
 						</ul>
 					</div>
 					<div class="span5">
-						<p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
+						<p class="logo"><img src="/./themes/images/logo.png" class="site_logo" alt=""></p>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the  Lorem Ipsum has been the industry's standard dummy text ever since the you.</p>
 						<br/>
 						<span class="social_icons">
@@ -291,6 +291,6 @@
 				<span>Copyright 2013 bootstrappage template  All right reserved.</span>
 			</section>
 		</div>
-		<script src="themes/js/common.js"></script>	
+		<script src="/./themes/js/common.js"></script>	
     </body>
 </html>

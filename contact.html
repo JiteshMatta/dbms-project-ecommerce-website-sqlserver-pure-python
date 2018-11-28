@@ -39,10 +39,10 @@
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">				
-							<li><a href="#">My Account</a></li>
-							<li><a href="cart.html">Your Cart</a></li>
-							<li><a href="checkout.html">Checkout</a></li>					
-							<li><a href="register.html">Login</a></li>			
+							<!-- <li><a href="#">My Account</a></li> -->
+							<li><a onclick="onclick_redirect('/./checkout.html')">Your Cart</a></li>
+							<li><a onclick="onclick_redirect('/./products.html')">Checkout</a></li>				
+							<li><a onclick="onclick_redirect('/./{user_page}.html')">{user_display}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -52,7 +52,7 @@
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
 					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
-					<nav id="menu" class="pull-right">
+					<!-- <nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="./products.html">Woman</a>					
 								<ul>
@@ -73,7 +73,7 @@
 							<li><a href="./products.html">Best Seller</a></li>
 							<li><a href="./products.html">Top Seller</a></li>
 						</ul>
-					</nav>
+					</nav> -->
 				</div>
 			</section>							
 			<section class="google_map">
