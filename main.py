@@ -6,31 +6,16 @@ from process import processIncomingData
 
 app = Flask(__name__)
 
-@app.route('/', defaults={'path': ''}, methods = ['GET', 'POST'])
+@app.route('/', defaults={'path': '/'}, methods = ['GET', 'POST'])
 @app.route('/<path:path>/', methods = ['GET', 'POST'])
 def handleRequest(path):
-	file, content, mimetype = processIncomingData(path)
+	content, mimetype, data = processIncomingData(path, request.data)
 	if request.method == 'POST':
-		print(request.form)
-		# if (request.form['request'] == 'login'):
-		# 	if (request.form['username'] == request.form['password']):
-		# 		return ("Ok!")
-		# 	else:
-		# 		return ("Wrong!")
-		# print(request.form.get("request"))
-		try:
-			print(request.form['request'].decode("utf-8"))
-			print(request.form['username'].decode("utf-8"))
-			print(request.form['password'].decode("utf-8"))
-		except:
-			pass
-		return("OK!")
-		if (mimetype == "text/html"):
-			content = content.decode("utf-8").replace("{user_display}", "Login").replace("{user_page}", "register")
-		return Response(content, mimetype=mimetype)
+		if (data[0] == "login"):
+			return ("Success ahihi")
 	else:
 		if (mimetype == "text/html"):
-			content = content.decode("utf-8").replace("{user_display}", "Login").replace("{user_page}", "register")
+			content = content.decode("utf-8").replace("{user_display}", "login").replace("{user_link}", "register.html")
 		return Response(content, mimetype=mimetype)
 
 if __name__ == "__main__":
