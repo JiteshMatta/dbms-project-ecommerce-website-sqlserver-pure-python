@@ -6,12 +6,12 @@ def processIncomingData(path, reqdata):
 		pass
 	while (url[-1] == "/" and len(url) > 1):
 		url = url[:-1]
-	print(url)
+	# print(url)
 	try:
 		f = open(url, "rb")
 		content = f.read()
 	except:
-		print("Error")
+		# print("Error")
 		content = ""
 	try:
 		ext = url.split('.')[-1]
@@ -29,5 +29,5 @@ def processIncomingData(path, reqdata):
 	}
 	mimetype = mimetypes.get(ext, "text/html")
 	data = reqdata.decode("utf-8").split(" ")
-	print(mimetype)
+	# print(mimetype)
 	return content, mimetype, data

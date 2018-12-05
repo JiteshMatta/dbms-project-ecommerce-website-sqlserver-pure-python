@@ -15,8 +15,10 @@ function onclick_login(code) {
 }
 
 function onclick_redirect(dest) {
-	var postFormStr = "<form method='POST' action='" + "/./" + dest + "'>\n";
+	var postFormStr = "<form method='POST' action='" + "#" + "'>\n";
+	postFormStr += "<input type='hidden' name='" + "haha" + "' value='" + "hihi" + "'></input>\n";
 	postFormStr += "</form>";
+	alert(postFormStr);
 	var formElement = $(postFormStr);
 	$('body').append(formElement);
 	$(formElement).submit();
